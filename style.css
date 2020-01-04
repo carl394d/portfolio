@@ -13,4 +13,49 @@
     transform-origin: top left;
 }
 
+body {
+    background-color: #F3EBE8;
+    margin: 0;
+}
+
 @media only screen and (min-width: 600px) {}
+
+h2 {
+    font-family: kumlien-pro, serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+    color: #234684;
+}
+
+h1 {
+    font-family: mandrel-normal, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #767877;
+}
+
+a {
+    font-family: mandrel-normal, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #234684;
+}
+
+footer {
+    font-family: mandrel-normal, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #234684;
+}
+
+#forside .box {
+    background-color: #F9FAF5;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
