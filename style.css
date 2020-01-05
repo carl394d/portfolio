@@ -1,6 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .hidden {
     opacity: 0;
-    transform: translateX(-100%)
+    transform: translateX(-100%);
+    display: none;
+
 }
 
 #menuknap {
@@ -24,7 +30,7 @@ h2 {
     font-family: kumlien-pro, serif;
 
     font-weight: 400;
-
+    font-size: 1.2rem;
     font-style: normal;
     color: #234684;
 }
@@ -52,10 +58,36 @@ footer {
 
 #forside .box {
     background-color: #F9FAF5;
-    height: 300px;
-    width: 300px;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
     justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+
+}
+
+/*
+#forside .name_hor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -15px;
+    width: 100%;
+    height: 100%;
+}
+
+#forside .name_ver {
+    position: relative;
+    transform: rotate(90deg);
+    width: 100%;
+    height: 100%;
+    left: 120px;
+    top: 40px;
+
+}
+*/
+#forside .mySlides {
+    width: 100%;
+    justify-content: flex-start;
 }
