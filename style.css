@@ -3,21 +3,37 @@ html {
 }
 
 .hidden {
-    opacity: 0;
-    transform: translateX(-100%);
     display: none;
-
 }
+
 
 #menuknap {
+    margin: 10px;
     display: inline-block;
+    position: sticky;
 }
+
+
 
 #menu {
     list-style-type: none;
-    transition: transform .3s;
-    transform-origin: top left;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #F3EBE8;
+    animation: fadein 1s;
 }
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 body {
     background-color: #F3EBE8;
@@ -35,11 +51,20 @@ h2 {
     color: #234684;
 }
 
-h1 {
+#forside h1 {
     font-family: mandrel-normal, sans-serif;
     font-weight: 600;
     font-style: italic;
     color: #767877;
+    font-size: 3rem;
+}
+
+#forside .subject {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -65px;
+
 }
 
 a {
@@ -49,12 +74,20 @@ a {
     color: #234684;
 }
 
-footer {
+#forside .forside_footer {
     font-family: mandrel-normal, sans-serif;
     font-weight: 500;
     font-style: normal;
     color: #234684;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-60px);
 }
+
+a {
+    text-decoration: none;
+}
+
 
 #forside .box {
     background-color: #F9FAF5;
@@ -67,26 +100,24 @@ footer {
 
 }
 
-/*
+
 #forside .name_hor {
-    position: relative;
     display: flex;
     justify-content: center;
-    top: -15px;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    top: 92px;
 }
 
 #forside .name_ver {
+    display: flex;
+    justify-content: center;
     position: relative;
     transform: rotate(90deg);
-    width: 100%;
-    height: 100%;
-    left: 120px;
-    top: 40px;
+    top: 170px;
+    left: 140px;
 
 }
-*/
+
 #forside .mySlides {
     width: 100%;
     justify-content: flex-start;

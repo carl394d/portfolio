@@ -8,10 +8,9 @@ function sidenVises() {
 function toggleMenu() {
     console.log("toggleMenu");
     document.querySelector("#menu").classList.toggle("hidden");
-
-
-
 }
+
+
 
 var slideIndex = 0;
 carousel();
