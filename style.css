@@ -68,12 +68,13 @@ body {
 }
 
 
-a {
+#forside a {
     font-family: mandrel-normal, sans-serif;
     font-weight: 500;
     font-style: normal;
     color: #234684;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #forside .forside_footer {
@@ -87,9 +88,6 @@ a {
     margin-top: 30px;
 }
 
-a {
-    text-decoration: none;
-}
 
 
 #forside .box {
@@ -119,6 +117,74 @@ a {
 .desk_nav {
     display: none;
 
+}
+
+a {
+    font-family: mandrel-normal, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #234684;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#web {
+    display: flex;
+    flex-direction: column;
+}
+
+#web .col1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAF5;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 20px;
+
+}
+
+#web .fotos {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    flex-basis: auto;
+}
+
+#web .fotos img {
+    padding-left: 10px;
+    padding-right: 10px;
+    scroll-snap-align: center;
+    width: 290px;
+}
+
+#web .img1 {
+    padding: 10px;
+    background-color: #E4E1DC;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+#web .img2 {
+    padding: 10px;
+    background-color: #E9E8E4;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+#web p {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+#web h2 {
+    font-family: kumlien-pro, serif;
+
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-style: normal;
+    color: #234684;
 }
 
 @media only screen and (min-width: 600px) {
@@ -226,158 +292,217 @@ a {
         flex-grow: 2;
     }
 
-    @media only screen and (min-width: 700px) {
-        #forside .subject {
-            border: none;
-        }
-
-        #forside h1 {
-            font-size: 5rem;
-        }
-
-        #forside .box {
-            flex-basis: 500px;
-
-        }
-
-        #forside .col1 {
-            flex-direction: column;
-        }
-
-        #forside h2 {
-            font-size: 2.5rem;
-        }
-
-        #forside .subject {
-            align-items: flex-start;
-            width: 100%;
-            transform: translateY(-200px);
-        }
+    #web .fotos img {
+        width: 305px;
     }
 
-    @media only screen and (min-width: 800px) {
+    #web .fotos {
+        align-items: center;
+    }
+}
 
 
-        #menuknap {
-            display: none;
-        }
+@media only screen and (min-width: 700px) {
+    #forside .subject {
+        border: none;
+    }
 
-        .desk_nav {
-            display: flex;
-            list-style-type: none;
-            flex-direction: row;
-            flex-basis: 600px;
-            justify-content: space-between;
-        }
+    #forside h1 {
+        font-size: 5rem;
+    }
 
-        nav {
-            display: flex;
-            list-style-type: none;
-            flex-direction: row;
-        }
+    #forside .box {
+        flex-basis: 500px;
 
-        li {
-            margin-left: 20px;
-            margin-right: 20px;
-            margin-top: 10px;
-        }
+    }
 
-        .nav_om {
-            display: flex;
-            justify-content: flex-end;
+    #forside .col1 {
+        flex-direction: column;
+    }
+
+    #forside h2 {
+        font-size: 2.5rem;
+    }
+
+    #forside .subject {
+        align-items: flex-start;
+        width: 100%;
+        transform: translateY(-200px);
+    }
+}
+
+@media only screen and (min-width: 800px) {
+
+
+    #menuknap {
+        display: none;
+    }
+
+    .desk_nav {
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+        flex-basis: 600px;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        list-style-type: none;
+        flex-direction: row;
+    }
+
+    li {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .nav_om {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #forside .box {
+        flex-basis: 400px;
+        padding: 40px;
+        flex-grow: 2;
+
+    }
+
+    #forside .just {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
+        flex-direction: column;
+    }
+
+    #forside .name_ver2 {
+        display: flex;
+        right: -85px;
+        position: .;
+    }
+
+    #forside .name_ver {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        top: -145px;
+        left: 585px;
+
+    }
+
+    #forside .name_hor1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        top: 150px;
+        margin: 30px;
+
+    }
+
+
+
+    #forside h2 {
+        font-size: 3rem;
+        margin: 14px;
+    }
+
+    #forside h1 {
+        margin-bottom: 0px;
+        font-size: 5rem;
+    }
+
+    #forside .col1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #forside .forside_footer {
+        display: none;
+    }
+
+    #forside {
+        margin-bottom: 20px;
+    }
+
+    #forside .subject {
+        display: flex;
+        flex-basis: auto;
+        align-items: center;
+        transform: translateY(20px);
+        flex-grow: 1;
+        flex-basis: 400px;
+
+    }
+
+
+
+
+    #web {
+        flex-direction: row;
+    }
+
+    #web .fotos {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 600px;
+        flex-grow: 2;
+        margin: 25px;
+        overflow-x: hidden;
+
+    }
+
+    #web .col1 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 400px;
+        flex-grow: 1;
+        background-color: #F9FAF5;
+        border-radius: 25px;
+        padding: 20px;
+        margin-left: 25px;
+        margin-top: 25px;
+        height: 50%;
+
+        scroll-snap-type: none;
+    }
+
+    #web .fotos img {
+        width: 96%;
+        flex-basis: 400px;
+        border-radius: 20px;
+
+    }
+
+    #web img1 {
+        width: auto;
+    }
+
+    #web img2 {
+        width: auto;
+    }
+
+
+    @media only screen and (min-width: 1000px) {
+        #forside .subject {
+            flex-basis: 400px;
         }
 
         #forside .box {
-            flex-basis: 400px;
+            flex-basis: auto;
             padding: 40px;
-            flex-grow: 2;
-
-        }
-
-        #forside .just {
-            display: flex;
-            justify-content: center;
-            margin-top: 40px;
-            margin-right: 20px;
-            margin-left: 20px;
-            flex-direction: column;
-        }
-
-        #forside .name_ver2 {
-            display: flex;
-            right: -85px;
-            position: .;
-        }
-
-        #forside .name_ver {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            top: -145px;
-            left: 585px;
-
-        }
-
-        #forside .name_hor1 {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            top: 150px;
-            margin: 30px;
-
-        }
-
-
-
-        #forside h2 {
-            font-size: 3rem;
-            margin: 14px;
+            flex-grow: 1;
+            width: min-content;
         }
 
         #forside h1 {
             margin-bottom: 0px;
-            font-size: 5rem;
+            font-size: 6rem;
         }
 
-        #forside .col1 {
-            display: flex;
-            flex-direction: row;
-        }
-
-        #forside .forside_footer {
-            display: none;
-        }
-
-        #forside {
-            margin-bottom: 20px;
-        }
-
-        #forside .subject {
-            display: flex;
-            flex-basis: auto;
-            align-items: center;
-            transform: translateY(20px);
-            flex-grow: 1;
-            flex-basis: 400px;
-
-        }
-
-        @media only screen and (min-width: 1000px) {
-            #forside .subject {
-                flex-basis: 400px;
-            }
-
-            #forside .box {
-                flex-basis: auto;
-                padding: 40px;
-                flex-grow: 1;
-                width: min-content;
-            }
-
-            #forside h1 {
-                margin-bottom: 0px;
-                font-size: 6rem;
-            }
-
-
+        #web .fotos img {
+            width: 98%;
         }
