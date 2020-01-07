@@ -21,7 +21,7 @@ html {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #F3EBE8;
+    background-color: #F5EDEB;
     animation: fadein 1s;
 }
 
@@ -187,18 +187,26 @@ a {
     color: #234684;
 }
 
-#ux .fotos {
+#ux h2 {
+    font-family: kumlien-pro, serif;
+
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-style: normal;
+    color: #234684;
+}
+
+#ux .fotos1 {
     display: flex;
     scroll-snap-type: x mandatory;
     overflow-x: scroll;
     flex-basis: auto;
     padding: 10px;
-    background-color: #E9E8E4;
-    border-radius: 20px;
+    background-color: #F0EFED;
     margin: 20px;
 }
 
-#ux .fotos img {
+#ux .fotos1 img {
     padding-left: 10px;
     padding-right: 10px;
     scroll-snap-align: center;
@@ -207,6 +215,118 @@ a {
     margin-left: 10px;
 
 }
+
+#ux .fotos2 {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    flex-basis: auto;
+    padding: 10px;
+    background-color: #E9E8E4;
+    margin: 20px;
+}
+
+#ux .fotos2 img {
+    padding-left: 10px;
+    padding-right: 10px;
+    scroll-snap-align: center;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+#ux .fotos3 {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    flex-basis: auto;
+    padding: 10px;
+    background-color: #E4E1DC;
+    margin: 20px;
+}
+
+#ux .fotos3 img {
+    padding-left: 10px;
+    padding-right: 10px;
+    scroll-snap-align: center;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+#ux .fotos4 {
+    display: flex;
+    flex-basis: auto;
+    padding: 10px;
+    background-color: #DEDBD6;
+    margin: 20px;
+}
+
+#ux .fotos4 img {
+    width: 100%;
+
+
+}
+
+#ux .fotos5 {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    flex-basis: auto;
+    padding: 10px;
+    background-color: #F0EFED;
+    margin: 20px;
+}
+
+#ux .fotos5 img {
+    padding-left: 10px;
+    padding-right: 10px;
+    scroll-snap-align: center;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+#ux .fotos6 {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    flex-basis: auto;
+    padding: 10px;
+    background-color: #E9E8E4;
+    margin: 20px;
+}
+
+#ux .fotos6 img {
+    padding-left: 10px;
+    padding-right: 10px;
+    scroll-snap-align: center;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+#ux .textbox {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #F9FAF5;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#ux {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
 
 @media only screen and (min-width: 600px) {
 
@@ -526,4 +646,129 @@ a {
 
         #web .fotos img {
             width: 98%;
+        }
+
+        #ux {}
+
+        #ux .fotos1 {
+
+            overflow-x: initial;
+            flex-basis: auto;
+            flex-direction: column;
+        }
+
+        #ux .fotos2 {
+
+            overflow-x: initial;
+            flex-direction: row;
+            display: flex;
+            width: 94%;
+            align-content: center;
+            justify-content: space-around;
+        }
+
+        #ux .fotos2 img {
+            scroll-snap-align: none;
+            width: 25%;
+            align-self: center;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-right: 10px;
+            margin-left: 10px;
+
+        }
+
+        #ux .fotos3 {
+
+            overflow-x: initial;
+            flex-direction: row;
+            display: flex;
+            width: 94%;
+            align-content: center;
+            justify-content: space-around;
+        }
+
+        #ux .fotos3 img {
+            scroll-snap-align: none;
+            width: 25%;
+            align-self: center;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-right: 10px;
+            margin-left: 10px;
+
+        }
+
+
+        #ux .fotos4 {
+            overflow-x: initial;
+            flex-basis: auto;
+            flex-direction: column;
+            width: 25%;
+        }
+
+        #ux .fotos4 img {
+            width: 100%;
+        }
+
+        #ux .fotos5 {
+
+            overflow-x: initial;
+            flex-basis: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+
+        #ux .fotos5 img {
+            margin-right: 10px;
+            margin-left: 10px;
+            display: flex;
+            width: 25%;
+        }
+
+        #ux .fotos6 {
+
+            overflow-x: initial;
+            flex-basis: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #ux .fotos6 img {
+            margin-right: 10px;
+            margin-left: 10px;
+            display: flex;
+            width: 25%;
+        }
+
+        #ux .fotos1a {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+        }
+
+        #ux .fotos1b {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+        }
+
+        #ux .fotos1c {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            align-self: center;
+        }
+
+        #ux .fotos1 img {
+            scroll-snap-align: none;
+            width: 100%;
+            padding-left: 0px;
+            padding-right: 0px;
+            margin-right: 0px;
+            margin-left: 0px;
+
         }
