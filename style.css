@@ -380,6 +380,27 @@ a {
     font-size: 1.2rem;
 }
 
+#animation .fotos2 img {
+    padding-left: 10px;
+    padding-right: 10px;
+    scroll-snap-align: center;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+
+}
+
+#animation .fotos2 {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    flex-basis: auto;
+    padding: 10px;
+    background-color: #E9E8E4;
+    margin: 20px;
+}
+
 @media only screen and (min-width: 600px) {
 
 
@@ -822,5 +843,65 @@ a {
             padding-right: 0px;
             margin-right: 0px;
             margin-left: 0px;
+
+        }
+
+        #animation .fotos1 img {
+            scroll-snap-align: none;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-right: 0px;
+            margin-left: 0px;
+
+        }
+
+        #animation .fotos1 {
+
+            overflow-x: initial;
+            flex-basis: 400px;
+            flex-direction: column;
+
+        }
+
+        #animation .fotos2 img {
+            scroll-snap-align: none;
+            width: 48%;
+
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-right: 0px;
+            margin-left: 0px;
+            flex-direction: row;
+
+        }
+
+        #animation .fotos2 {
+            justify-content: space-around;
+            overflow-x: initial;
+            flex-basis: 400px;
+            flex-direction: row;
+        }
+
+        #animation .fotos1c {
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            justify-content: center;
+            align-self: center;
+
+        }
+
+        #animation .fotos1a {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #animation .fotos1a img {
+
+            width: 25%;
+            margin-bottom: 20px;
 
         }
