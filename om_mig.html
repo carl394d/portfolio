@@ -11,20 +11,32 @@
 </head>
 
 <body>
-    <nav>
-        <div id="menuknap">☰</div>
-        <ul id="menu" class="hidden">
-            <li><a href="index.html">FORSIDE</a></li>
-            <li> <a href="web.html">WEB</a></li>
-            <li> <a href="ux.html">UX</a></li>
-            <li> <a href="animation.html">ANIMATION</a></li>
-            <li> <a href="indhold.html">INDHOLD</a></li>
-        </ul>
+    <nav class="mobile_nav">
+        <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li><a href="index.html">FORSIDE</a></li>
+                    <li> <a href="web.html">WEB</a></li>
+                    <li> <a href="ux.html">UX</a></li>
+                    <li> <a href="animation.html">ANIMATION</a></li>
+                    <li> <a href="indhold.html">INDHOLD</a></li>
+                    <br><br>
+
+                    <li class="current_page">OM MIG</li>
+                </ul>
+            </nav>
+        </div>
     </nav>
 
     <div class="desk_nav">
         <nav>
-            <li> <a href="index.html">FORSIDE</a></li>
+            <li><a href="index.html">FORSIDE</a></li>
             <li> <a href="web.html">WEB</a></li>
             <li> <a href="ux.html">UX</a></li>
             <li> <a href="animation.html">ANIMATION</a></li>
@@ -32,7 +44,7 @@
 
         </nav>
         <nav class="nav_om">
-            <li> <a href="om_mig.html">OM MIG</a></li>
+            <li class="current_page">OM MIG</li>
         </nav>
     </div>
     <section id="ommig">
