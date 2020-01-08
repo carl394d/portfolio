@@ -6,6 +6,41 @@ html {
     display: none;
 }
 
+#profile_image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background-color: #B00B13;
+    border-radius: 50%;
+}
+
+#profile_image img {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+#profile_image.konami img:nth-of-type(2) {
+    transition: top 1s ease-in 3s;
+    top: 300px;
+}
+
+#profile_image.konami img:nth-of-type(3) {
+    transition: top 1s ease-in 2s;
+    top: 300px;
+}
+
+#profile_image.konami img:nth-of-type(4) {
+    transition: top 1s ease-in 1s;
+    top: 300px;
+}
+
+#profile_image.konami img:nth-of-type(5) {
+    transition: top 1s ease-in;
+    top: 300px;
+}
 
 #menuknap {
     margin: 10px;
@@ -23,6 +58,7 @@ html {
     height: 100%;
     background-color: #F5EDEB;
     animation: fadein 1s;
+    z-index: 2;
 }
 
 @keyframes fadein {
@@ -120,6 +156,15 @@ body {
 }
 
 a {
+    font-family: mandrel-normal, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #234684;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer {
     font-family: mandrel-normal, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -398,6 +443,32 @@ a {
     flex-basis: auto;
     padding: 10px;
     background-color: #E9E8E4;
+    margin: 20px;
+}
+
+#ommig h2 {
+    font-family: kumlien-pro, serif;
+
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-style: normal;
+    color: #234684;
+}
+
+#ommig p {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+#ommig .textbox {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #F9FAF5;
+    border-radius: 20px;
     margin: 20px;
 }
 
@@ -904,4 +975,11 @@ a {
             width: 25%;
             margin-bottom: 20px;
 
+        }
+
+        #ommig {
+            margin: 20px;
+            margin-right: 40px;
+            display: flex;
+            flex-direction: row-reverse;
         }
