@@ -4,9 +4,9 @@ carousel();
 function carousel() {
     var i;
     var x = document.querySelectorAll(".mySlides");
-
+    console.log(x, x[0])
     if (document.querySelector(".current_page").innerHTML.includes("FORSIDE")) {
-        console.log("Forside")
+
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
@@ -47,7 +47,7 @@ function konami(parm) {
 
     // Get value of key from Konami code array
     let requiredKey = konamiCode[konamiCodePosition];
-
+    console.log("key:", key, "requiredKey:", requiredKey);
     // Check if the pressed key and the array are the same
     if (key == requiredKey) {
         // If they are the same
